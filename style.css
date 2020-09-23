@@ -1,0 +1,286 @@
+body {
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+/* start navbar */
+.bg-header {
+    background-image: url("assets/content/bg-header.png");
+    background-size: 100% 100%;
+    height: 150px;
+    position: fixed;
+    z-index: 999;
+}
+
+.navbar {
+    padding-top: 10px;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    margin-right: 30px;
+    font-weight: 500;
+}
+
+.navbar-brand h1 {
+    font-weight: 500;
+    color: #fff;
+}
+
+.navbar-brand h1 span {
+    font-weight: 200;
+    color: #fff;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:hover::before {
+    content: "";
+    position: absolute;
+    background-color: #ffc443;
+    height: 8px;
+    width: 50%;
+    bottom: -7px;
+    left: 50%;
+    border-radius: 12px;
+    transform: translateX(-50%);
+}
+
+.active-2 {
+    position: relative;
+}
+
+.active-2::before {
+    content: "";
+    position: absolute;
+    background-color: #ffc443;
+    height: 8px;
+    width: 50%;
+    bottom: -7px;
+    left: 50%;
+    border-radius: 12px;
+    transform: translateX(-50%);
+}
+
+/* end navbar */
+
+/* start form warp input search */
+.wrap-input {
+    position: relative;
+    border: 12px;
+    width: 33%;
+    height: 45px;
+}
+
+.form-control {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #651b30 0% 0% no-repeat padding-box;
+    border: 0;
+    border-radius: 25px;
+}
+
+.form-control::placeholder {
+    color: #fff;
+}
+
+.form-control:focus {
+    background: #651b30 0% 0% no-repeat padding-box;
+    box-shadow: none;
+}
+
+.form-control[type=text] {
+    color: #fff;
+}
+
+.form-control {
+    padding: 0 25px;
+}
+
+.icon-search {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* end form warp input search */
+
+/* start content */
+.bg-content-1 {
+    padding-top: 140px;
+}
+
+.carousel-inner {
+    border-radius: 12px;
+}
+
+.overlay {
+    position: absolute;
+    background-color: #0000006b;
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+    padding: 20px;
+}
+
+.overlay h4,
+.overlay p {
+    color: #fff;
+}
+
+.overlay h4 {
+    font-weight: 500;
+}
+
+.overlay p {
+    font-weight: 100;
+}
+
+
+.card-1 {
+    padding: 10px 10px 0 10px;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px #00000010;
+    border-radius: 5px;
+    position: relative;
+}
+
+.btn-head {
+    position: absolute;
+    right: 10px;
+    top: -15px;
+    background: transparent linear-gradient(180deg, #ff7600 0%, #ffa700 100%) 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    padding: 1px 10px;
+}
+
+.btn-head span {
+    color: #fff;
+    font-weight: 400;
+}
+
+/* end content */
+
+/* start content 2 */
+
+.bg-content-2 {
+    background: #8d2e30 0% 0%;
+    min-height: 230px;
+    width: 100%;
+    position: relative;
+}
+
+.card-2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 150px;
+    width: 100%;
+    z-index: 2;
+}
+
+.img-card-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.overlay-2 {
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+    background-color: #0000006b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-2 span {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn-head-2 {
+    position: absolute;
+    left: -10px;
+    top: -15px;
+    background: transparent linear-gradient(180deg, #ff7600 0%, #ffa700 100%) 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    padding: 1px 10px;
+    z-index: 9;
+}
+
+.btn-head-2 span {
+    color: #fff;
+    font-weight: 400;
+}
+
+.shape-content-2 {
+    position: absolute;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.hr1 {
+    width: 80%;
+    height: 20px;
+    z-index: 10;
+    background-color: #a94e4f;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    border-radius: 15px;
+}
+
+.hr2 {
+    width: 80%;
+    height: 20px;
+    z-index: 10;
+    background-color: #a94e4f;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 15px;
+}
+
+/* end content 2 */
+.carousel-indicators li {
+    height: 10px;
+    border-bottom: 0;
+    border-top: 0;
+    border-radius: 12px;
+}
+
+.carousel-indicators li.active {
+    height: 10px;
+    width: 80px;
+    background-color: #ffa700;
+
+}
+
+.footer {
+    background: #8d2e30 0% 0% no-repeat padding-box;
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: #ffa700;
+}
